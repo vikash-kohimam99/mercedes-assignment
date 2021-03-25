@@ -1,0 +1,4 @@
+server:  port: 8001spring:  rabbitmq:    host: localhost
+    port: 5672    username: guest    password: guest  main:    allow-bean-definition-overriding: true  h2:    console:      enabled: true  datasource:    url: jdbc:h2:mem:testdb           mercedes: rabbitmq:    exchange: mercedes.exchange   queue: mercedes.queue   routingkey: mercedes.routingkey
+ cityid:    url: http://localhost:8000/price/
+
